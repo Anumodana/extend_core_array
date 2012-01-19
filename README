@@ -1,0 +1,16 @@
+Add 3 new methods to Array class which are match_positions, select_index, and reverse_select_index.
+
+Example:
+Given
+  a = [1, 2, 3, 4, 5, 'cat', 'dog']
+  b = [1, 0, 'cat', 4, 6, 8, 'dog']
+  c = [0, 2, 4]
+
+- a.match_positions(b)
+#=> [true, false, false, true, false, false, true]
+
+- a.select_indexes(c)
+#=> [1, 3, 5]
+
+- a.reverse_select_indexes(c)
+#=> [2, 4, "cat", "dog"]
